@@ -1,5 +1,6 @@
 DELIMITER $$
 
+
 CREATE
     FUNCTION `initcap`(input VARCHAR(255))
     RETURNS VARCHAR(255)

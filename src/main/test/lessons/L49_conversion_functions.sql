@@ -1,0 +1,2 @@
+SELECT LENGTH(123);
+SELECT * FROM countries;

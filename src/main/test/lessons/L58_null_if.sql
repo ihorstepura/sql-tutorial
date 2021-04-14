@@ -1,0 +1,17 @@
+SELECT NULLIF(18, 18);
+SELECT NULLIF(17, 18);
+SELECT NULLIF(15, 1||5);
+SELECT NULLIF(1||5, 15);
+SELECT NULLIF('15', 15);
+SELECT NULLIF('2020-02-02', '2020/02/02');
+SELECT NULLIF('2020-02-02', '2020/02/02');
+SELECT NULLIF(CONVERT('2020-02-02', DATE), CONVERT('2020/02/02', DATE));
+
+SELECT * FROM countries;
+
+SELECT country_id, country_name,
+       COALESCE(NULLIF(country_id, UPPER(SUBSTRING(country_name, 1, 2))), 'no match', 'match') comparing
+FROM countries;
+
+
+

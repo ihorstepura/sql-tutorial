@@ -1,0 +1,4 @@
+#oracle
+SELECT TO_CHAR(18) FROM dual;
+
+SELECT CONVERT(18, CHAR );

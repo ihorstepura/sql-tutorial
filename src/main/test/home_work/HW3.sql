@@ -3,7 +3,7 @@ SELECT * FROM employees WHERE first_name = 'David';
 #2
 SELECT * FROM employees WHERE job_id = 'FI_ACCOUNT';
 #3
-SELECT first_name, last_name, salary, department_id FROM employees \
+SELECT first_name, last_name, salary, department_id FROM employees
 WHERE department_id = 50 AND salary > 4000;
 #4
 SELECT * FROM employees WHERE department_id = 20 OR department_id = 30;
